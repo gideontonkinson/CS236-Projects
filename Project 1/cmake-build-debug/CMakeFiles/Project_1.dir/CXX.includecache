@@ -6,9 +6,133 @@
 
 #IncludeRegexTransform: 
 
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/AddAutomaton.h
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+
 /Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
 Token.h
 /Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Token.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/ColonAutomaton.h
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/ColonDashAutomaton.h
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/CommaAutomaton.h
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/CommentAutomation.cpp
+CommentAutomation.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/CommentAutomation.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/CommentAutomation.h
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/EOFAutomaton.h
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/FactAutomaton.h
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/IDAutomaton.h
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/LeftParenAutomaton.h
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Lexer.cpp
+Lexer.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Lexer.h
+ColonAutomaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/ColonAutomaton.h
+ColonDashAutomaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/ColonDashAutomaton.h
+CommaAutomaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/CommaAutomaton.h
+PeriodAutomaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/PeriodAutomaton.h
+QMarkAutomaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/QMarkAutomaton.h
+LeftParenAutomaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/LeftParenAutomaton.h
+RightParenAutomaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/RightParenAutomaton.h
+MultiplyAutomaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/MultiplyAutomaton.h
+AddAutomaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/AddAutomaton.h
+SchemesAutomaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/SchemesAutomaton.h
+FactAutomaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/FactAutomaton.h
+RulesAutomaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/RulesAutomaton.h
+QueriesAutomaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/QueriesAutomaton.h
+IDAutomaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/IDAutomaton.h
+StringAutomaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/StringAutomaton.h
+CommentAutomation.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/CommentAutomation.h
+UndefinedAutomata.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/UndefinedAutomata.h
+EOFAutomaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/EOFAutomaton.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Lexer.h
+vector
+-
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+Token.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Token.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/MultiplyAutomaton.h
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/PeriodAutomaton.h
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/QMarkAutomaton.h
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/QueriesAutomaton.h
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/RightParenAutomaton.h
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/RulesAutomaton.h
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/SchemesAutomaton.h
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/StringAutomaton.cpp
+StringAutomaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/StringAutomaton.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/StringAutomaton.h
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
 
 /Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Token.h
 string
