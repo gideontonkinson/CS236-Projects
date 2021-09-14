@@ -63,8 +63,7 @@ void Lexer::Run(std::string& input) {
     int lineNumber = 1;
     while(!input.empty()){
         int maxRead = 0;
-        Automaton* maxAutomaton;
-        maxAutomaton = automata.at(0);
+        Automaton* maxAutomaton = automata.at(0);
 
         //Handle white space
         while(isspace(input[0])){
@@ -81,9 +80,8 @@ void Lexer::Run(std::string& input) {
                 maxAutomaton = curr;
             }
         }
-        Token* newToken;
         if (maxRead > 0) {
-            newToken = maxAutomaton->CreateToken(input.substr(0, maxRead), lineNumber);
+            Token* newToken = maxAutomaton->CreateToken(input.substr(0, maxRead), lineNumber);
             lineNumber += maxAutomaton->NewLinesRead();
             tokens.push_back(newToken);
         }

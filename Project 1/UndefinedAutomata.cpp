@@ -13,7 +13,7 @@ void UndefinedAutomata::S0(const std::string& input) {
         inputRead++;
         index++;
         S4(input);
-    } else if(static_cast<int>(input.size()) != index){
+    } else if(input.size() != static_cast<size_t>(index)){
         inputRead = 1;
     }
 }
@@ -31,7 +31,7 @@ void UndefinedAutomata::S2(const std::string &input) {
         inputRead++;
         index++;
         S3(input);
-    } else if (static_cast<int>(input.size()) == index) {
+    } else if (input.size() == static_cast<size_t>(index)) {
         inputRead++;
     } else {
         if(input[index] == '\n'){
@@ -61,7 +61,7 @@ void UndefinedAutomata::S4(const std::string& input) {
         inputRead++;
         index++;
         S5(input);
-    } else if(static_cast<int>(input.size()) == index) {
+    } else if(input.size() == static_cast<size_t>(index)) {
         inputRead++;
     } else {
         if(input[index] == '\n'){

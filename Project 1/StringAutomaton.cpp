@@ -20,7 +20,7 @@ void StringAutomaton::S1(const std::string &input) {
             inputRead++;
             index++;
             S2(input);
-    } else if(static_cast<int>(input.size()) == index) {
+    } else if(input.size() == static_cast<size_t>(index)) {
         Serr();
     } else {
         if(input[index] == '\n'){
