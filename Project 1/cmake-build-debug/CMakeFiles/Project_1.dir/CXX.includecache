@@ -10,15 +10,27 @@
 Token.h
 /Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Token.h
 
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Lexer.h
+vector
+-
+Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+Token.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Token.h
+
 /Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Token.h
 string
 -
 
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/UndefinedAutomata.cpp
-UndefinedAutomata.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/UndefinedAutomata.h
-
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/UndefinedAutomata.h
-Automaton.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Automaton.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/main.cpp
+Lexer.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 1/Lexer.h
+iostream
+-
+fstream
+-
+string
+-
+sstream
+-
 

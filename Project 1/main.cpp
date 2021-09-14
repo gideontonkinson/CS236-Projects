@@ -6,28 +6,12 @@
 
 int main(int argc, char** argv) {
 
-    std::fstream in(argv[1]);
+    std::ifstream in;
+    in.open(argv[1]);
+    std::ostringstream sstr;
+    sstr << in.rdbuf();
+    std::string s = sstr.str();
 
-    std::filebuf* pbuf = in.rdbuf();
-
-    std::size_t size = pbuf->pubseekoff (0,in.end,in.in);
-    pbuf->pubseekpos (0,in.in);
-
-    // Allocate memory to contain file data
-    char* buffer=new char[size];
-
-    // Get file data
-    pbuf->sgetn (buffer,size);
-
-    in.close();
-
-    // Write content to ss
-    std::stringstream ss;
-    ss.str(buffer);
-
-    //No memory leaks
-    delete[] buffer;
-    std::string s = ss.str();
 
     Lexer* lexer = new Lexer();
 
