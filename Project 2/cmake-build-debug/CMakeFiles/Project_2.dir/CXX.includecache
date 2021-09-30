@@ -1,0 +1,62 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 2/DatalogProgram.h
+Predicate.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 2/Predicate.h
+Rule.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 2/Rule.h
+Parameter.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 2/Parameter.h
+vector
+-
+set
+-
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 2/Parameter.h
+string
+-
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 2/Parser.cpp
+iostream
+-
+Parser.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 2/Parser.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 2/Parser.h
+Token.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 2/Token.h
+Predicate.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 2/Predicate.h
+Rule.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 2/Rule.h
+DatalogProgram.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 2/DatalogProgram.h
+vector
+-
+set
+-
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 2/Predicate.h
+string
+-
+vector
+-
+Parameter.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 2/Parameter.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 2/Rule.h
+Predicate.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 2/Predicate.h
+vector
+-
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 2/Token.h
+string
+-
+
