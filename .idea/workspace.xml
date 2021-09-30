@@ -5,11 +5,43 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug-Schizo" ENABLED="true" CONFIG_NAME="Debug" TOOLCHAIN_NAME="Schizo" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdfd3791-7203-49c0-b4e3-e29ca456b39b" name="Changes" comment="" />
+    <list default="true" id="bdfd3791-7203-49c0-b4e3-e29ca456b39b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Project 1/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project 2/.idea/Project 2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project 2/DatalogProgram.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project 2/DatalogProgram.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project 2/Parameter.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project 2/Parameter.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project 2/Parser.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project 2/Parser.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project 2/Predicate.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project 2/Predicate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project 2/Rule.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project 2/Rule.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project 1/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeFiles/3.16.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeFiles/3.16.3/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeFiles/Project_1.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeFiles/Project_1.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeFiles/Project_1.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeFiles/Project_1.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeFiles/Project_1.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeFiles/Project_1.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/Project_1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/Project_1.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Project 1/cmake-build-debug-schizo/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/cmake-build-debug/CMakeFiles/Project_1.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/Project 1/cmake-build-debug/CMakeFiles/Project_1.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/cmake-build-debug/Project_1" beforeDir="false" afterPath="$PROJECT_DIR$/Project 1/cmake-build-debug/Project_1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/Project 1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 1/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Project 1/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +51,7 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Project 1" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1y5uRYB4bMRwXPau5KZMvvvEdZL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -39,13 +71,8 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -57,6 +84,8 @@
       <updated>1631553762650</updated>
       <workItem from="1631553764625" duration="853000" />
       <workItem from="1631560224766" duration="672000" />
+      <workItem from="1631563751138" duration="1573000" />
+      <workItem from="1632983003023" duration="1000" />
     </task>
     <servers />
   </component>

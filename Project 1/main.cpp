@@ -12,7 +12,6 @@ int main(int argc, char** argv) {
     sstr << in.rdbuf();
     std::string s = sstr.str();
 
-
     Lexer* lexer = new Lexer();
 
     lexer->Run(s);
