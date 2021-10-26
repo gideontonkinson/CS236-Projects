@@ -15,11 +15,11 @@ private:
     Header* header;
     std::set<Tuple> rows;
 public:
-    Relation(){};
-    Relation select(int index, std::string value){};
-    Relation select(int index1, int index2{};
-    Relation project(std::vector<int> indices){};
-    Relation rename(std::vector<std::string> attributes){};
+    Relation();
+    Relation select(int index, std::string value);
+    Relation select(int index1, int index2);
+    Relation project(std::vector<int> indices);
+    Relation rename(std::vector<std::string> attributes);
 };
 
 

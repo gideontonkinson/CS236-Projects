@@ -8,7 +8,7 @@
 
 class Header {
 private:
-    std::vector<std::string> attributes
+    std::vector<std::string> attributes;
 };
 
 

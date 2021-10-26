@@ -12,7 +12,10 @@ class Tuple {
 private:
     std::vector<std::string> values;
 public:
-    bool operator< (const Tuple &rhs) const;
+    Tuple();
+    bool operator< (Tuple& rhs) const;
+    std::vector<std::string> getValues();
+    void addValue(std::string newVal);
 };
 
 
