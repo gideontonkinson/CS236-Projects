@@ -12,11 +12,11 @@ class Tuple {
 private:
     std::vector<std::string> values;
 public:
-    Tuple();
+    Tuple() = default;
     void addValue(std::string newVal);
     bool operator< (const Tuple& rhs) const;
     std::string at(int i);
-    size_t size()
+    size_t size();
 };
 
 

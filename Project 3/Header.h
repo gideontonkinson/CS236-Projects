@@ -11,7 +11,7 @@ class Header {
 private:
     std::vector<std::string> attributes;
 public:
-    Header();
+    Header() = default;
     void addAttributes(std::string a);
     std::vector<std::string> getAttributes();
     std::string at(int i);

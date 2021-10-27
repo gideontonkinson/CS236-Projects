@@ -16,6 +16,9 @@ private:
 public:
     Interpreter(DatalogProgram datalogProgram);
     Relation* evalutePredicate(Predicate& p);
+    void makeRelations();
+    void makeTuples();
+
 };
 
 

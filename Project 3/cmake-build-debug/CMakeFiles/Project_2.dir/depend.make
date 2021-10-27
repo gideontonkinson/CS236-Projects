@@ -26,6 +26,12 @@ CMakeFiles/Project_2.dir/CommentAutomation.cpp.o: \
  ../CommentAutomation.cpp \
  ../CommentAutomation.h \
  ../Token.h
+CMakeFiles/Project_2.dir/Database.cpp.o: \
+ ../Database.cpp \
+ ../Database.h \
+ ../Header.h \
+ ../Relation.h \
+ ../Tuple.h
 CMakeFiles/Project_2.dir/DatalogProgram.cpp.o: \
  ../DatalogProgram.cpp \
  ../DatalogProgram.h \
@@ -50,6 +56,17 @@ CMakeFiles/Project_2.dir/IDAutomaton.cpp.o: \
  ../IDAutomaton.cpp \
  ../IDAutomaton.h \
  ../Token.h
+CMakeFiles/Project_2.dir/Interpreter.cpp.o: \
+ ../Database.h \
+ ../DatalogProgram.h \
+ ../Header.h \
+ ../Interpreter.cpp \
+ ../Interpreter.h \
+ ../Parameter.h \
+ ../Predicate.h \
+ ../Relation.h \
+ ../Rule.h \
+ ../Tuple.h
 CMakeFiles/Project_2.dir/LeftParenAutomaton.cpp.o: \
  ../Automaton.h \
  ../LeftParenAutomaton.cpp \

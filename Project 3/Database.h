@@ -9,7 +9,10 @@
 
 class Database {
 private:
-std::map<std::string, Relation> relations;
+    std::map<std::string, Relation*> relations;
+public:
+    void add(std::string s, Relation* r);
+    Relation* at(std::string);
 };
 
 

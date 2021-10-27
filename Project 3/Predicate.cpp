@@ -28,3 +28,7 @@ void Predicate::addParamList(std::vector<Parameter*> paramList){
 std::vector<Parameter *> Predicate::getParamas() {
     return parameters;
 }
+
+std::string Predicate::getID() {
+    return id;
+}

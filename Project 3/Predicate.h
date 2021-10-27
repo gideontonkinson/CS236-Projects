@@ -19,6 +19,7 @@ public:
     void addParams(Parameter* p);
     void addParamList(std::vector<Parameter*> pl);
     std::vector<Parameter*> getParamas();
+    std::string getID();
 };
 
 

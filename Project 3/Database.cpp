@@ -4,3 +4,10 @@
 
 #include "Database.h"
 
+void Database::add(std::string s, Relation* r) {
+    relations.insert({s,r});
+}
+
+Relation* Database::at(std::string s) {
+     return relations.at(s);
+}

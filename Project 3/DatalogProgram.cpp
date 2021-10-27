@@ -51,7 +51,7 @@ void DatalogProgram::addSchemeList(std::vector<Predicate *> schemeList) {
 }
 
 std::vector<Predicate *> DatalogProgram::getSchemes() {
-    return schemes
+    return schemes;
 }
 
 void DatalogProgram::makeDomains() {
