@@ -21,13 +21,18 @@ public:
     DatalogProgram();
     void addScheme(Predicate* scheme);
     void addSchemeList(std::vector<Predicate*> schemeList);
+    std::vector<Predicate*> getSchemes();
     void addFact(Predicate* fact);
     void addFactList(std::vector<Predicate*> factList);
+    std::vector<Predicate*> getFacts();
     void addQuery(Predicate* query);
     void addQueryList(std::vector<Predicate*> queryList);
+    std::vector<Predicate*> getQueries();
     void addRule(Rule* rule);
     void addRuleList(std::vector<Rule*> ruleList);
-    void getDomains();
+    std::vector<Rule*> getRules();
+    void makeDomains();
+    std::set<std::string> getDomains();
     std::string toString();
 };
 

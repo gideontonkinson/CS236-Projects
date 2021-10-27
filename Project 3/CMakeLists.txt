@@ -47,4 +47,4 @@ add_executable(Project_2
         Token.cpp
         Token.h
         UndefinedAutomata.cpp
-        UndefinedAutomata.h Parser.cpp Parser.h Predicate.cpp Predicate.h Parameter.cpp Parameter.h Rule.cpp Rule.h DatalogProgram.cpp DatalogProgram.h Tuple.cpp Tuple.h Header.cpp Header.h Relation.cpp Relation.h)
+        UndefinedAutomata.h Parser.cpp Parser.h Predicate.cpp Predicate.h Parameter.cpp Parameter.h Rule.cpp Rule.h DatalogProgram.cpp DatalogProgram.h Tuple.cpp Tuple.h Header.cpp Header.h Relation.cpp Relation.h Database.cpp Database.h Interpreter.cpp Interpreter.h)

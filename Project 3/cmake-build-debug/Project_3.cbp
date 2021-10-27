@@ -115,6 +115,12 @@
 		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 3/CommentAutomation.h">
 			<Option target="Project_2"/>
 		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 3/Database.cpp">
+			<Option target="Project_2"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 3/Database.h">
+			<Option target="Project_2"/>
+		</Unit>
 		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 3/DatalogProgram.cpp">
 			<Option target="Project_2"/>
 		</Unit>
@@ -143,6 +149,12 @@
 			<Option target="Project_2"/>
 		</Unit>
 		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 3/IDAutomaton.h">
+			<Option target="Project_2"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 3/Interpreter.cpp">
+			<Option target="Project_2"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 3/Interpreter.h">
 			<Option target="Project_2"/>
 		</Unit>
 		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 3/LeftParenAutomaton.cpp">

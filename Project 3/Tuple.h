@@ -13,9 +13,10 @@ private:
     std::vector<std::string> values;
 public:
     Tuple();
-    bool operator< (Tuple& rhs) const;
-    std::vector<std::string> getValues();
     void addValue(std::string newVal);
+    bool operator< (const Tuple& rhs) const;
+    std::string at(int i);
+    size_t size()
 };
 
 

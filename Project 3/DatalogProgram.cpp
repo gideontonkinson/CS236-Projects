@@ -14,12 +14,20 @@ void DatalogProgram::addFactList(std::vector<Predicate *> factList) {
     facts.insert(facts.end(), factList.begin(), factList.end());
 }
 
+std::vector<Predicate *> DatalogProgram::getFacts() {
+    return facts;
+}
+
 void DatalogProgram::addQuery(Predicate *query) {
     queries.push_back(query);
 }
 
 void DatalogProgram::addQueryList(std::vector<Predicate *> queryList) {
     queries.insert(queries.end(), queryList.begin(), queryList.end());
+}
+
+std::vector<Predicate *> DatalogProgram::getQueries() {
+    return queries;
 }
 
 void DatalogProgram::addRule(Rule *rule) {
@@ -30,6 +38,10 @@ void DatalogProgram::addRuleList(std::vector<Rule *> ruleList) {
     rules.insert(rules.end(), ruleList.begin(), ruleList.end());
 }
 
+std::vector<Rule *> DatalogProgram::getRules() {
+    return rules;
+}
+
 void DatalogProgram::addScheme(Predicate *scheme) {
     schemes.push_back(scheme);
 }
@@ -38,7 +50,11 @@ void DatalogProgram::addSchemeList(std::vector<Predicate *> schemeList) {
     schemes.insert(schemes.end(), schemeList.begin(), schemeList.end());
 }
 
-void DatalogProgram::getDomains() {
+std::vector<Predicate *> DatalogProgram::getSchemes() {
+    return schemes
+}
+
+void DatalogProgram::makeDomains() {
     for(size_t i = 0; i < facts.size(); i++){
         std::vector<Parameter*> params = facts.at(i)->getParamas();
         for(size_t j = 0; j < params.size(); j++){
@@ -46,6 +62,10 @@ void DatalogProgram::getDomains() {
         }
     }
 }
+
+std::set<std::string> DatalogProgram::getDomains() {
+    return domains;
+};
 
 std::string DatalogProgram::toString() {
     std::string s = "Success!\n";

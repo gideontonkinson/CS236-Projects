@@ -84,7 +84,7 @@ DatalogProgram* Parser::parseDatalogProgram() {
         } else {
             throw tokens[i+1];
         }
-        datalog->getDomains();
+        datalog->makeDomains();
     return datalog;
 }
 
