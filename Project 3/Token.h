@@ -35,8 +35,6 @@ public:
     std::string typeOfToken();
     std::string valueOfToken();
     std::string toString();
-
-    // TODO: add other needed methods
 };
 
 #endif // TOKEN_H
