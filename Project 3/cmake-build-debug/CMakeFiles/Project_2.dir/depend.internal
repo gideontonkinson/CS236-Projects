@@ -173,11 +173,16 @@ CMakeFiles/Project_2.dir/UndefinedAutomata.cpp.o
  /Users/gideontonkinson/Documents/CS 236/Projects/Project 3/UndefinedAutomata.h
 CMakeFiles/Project_2.dir/main.cpp.o
  /Users/gideontonkinson/Documents/CS 236/Projects/Project 3/Automaton.h
+ /Users/gideontonkinson/Documents/CS 236/Projects/Project 3/Database.h
  /Users/gideontonkinson/Documents/CS 236/Projects/Project 3/DatalogProgram.h
+ /Users/gideontonkinson/Documents/CS 236/Projects/Project 3/Header.h
+ /Users/gideontonkinson/Documents/CS 236/Projects/Project 3/Interpreter.h
  /Users/gideontonkinson/Documents/CS 236/Projects/Project 3/Lexer.h
  /Users/gideontonkinson/Documents/CS 236/Projects/Project 3/Parameter.h
  /Users/gideontonkinson/Documents/CS 236/Projects/Project 3/Parser.h
  /Users/gideontonkinson/Documents/CS 236/Projects/Project 3/Predicate.h
+ /Users/gideontonkinson/Documents/CS 236/Projects/Project 3/Relation.h
  /Users/gideontonkinson/Documents/CS 236/Projects/Project 3/Rule.h
  /Users/gideontonkinson/Documents/CS 236/Projects/Project 3/Token.h
+ /Users/gideontonkinson/Documents/CS 236/Projects/Project 3/Tuple.h
  /Users/gideontonkinson/Documents/CS 236/Projects/Project 3/main.cpp

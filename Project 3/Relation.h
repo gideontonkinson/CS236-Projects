@@ -16,11 +16,12 @@ private:
     std::set<Tuple> rows;
 public:
     Relation(std::string name, Header* header);
-    Relation* select(int index, std::string value);
-    Relation* select(int index1, int index2);
-    Relation* project(std::vector<int> indices);
+    Relation* select(size_t index, std::string value);
+    Relation* select(size_t index1, size_t index2);
+    Relation* project(std::vector<size_t> indices);
     Relation* rename(std::vector<std::string> attributes);
     void addTuple(Tuple t);
+    size_t numRows();
     std::string toString();
 };
 

@@ -10,12 +10,12 @@
 
 class Interpreter {
 private:
-    DatalogProgram datalogProgram;
+    DatalogProgram* datalogProgram;
     Database database;
 
 public:
-    Interpreter(DatalogProgram datalogProgram);
-    Relation* evalutePredicate(Predicate& p);
+    Interpreter(DatalogProgram* datalogProgram);
+    Relation* evaluatePredicate(Predicate* p);
     void makeRelations();
     void makeTuples();
 

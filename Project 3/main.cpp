@@ -1,5 +1,6 @@
 #include "Lexer.h"
 #include "Parser.h"
+#include "Interpreter.h"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -13,14 +14,15 @@ int main(int argc, char** argv) {
     sstr << in.rdbuf();
     std::string s = sstr.str();
 
-    Lexer* lexer = new Lexer();
+    auto* lexer = new Lexer();
 
     lexer->Run(s);
-    Parser* parser = new Parser(lexer->Tokens());
-    parser->parse();
+    auto* parser = new Parser(lexer->Tokens());
+    auto* interpreter = new Interpreter(parser->parse());
 
     delete lexer;
     delete parser;
+    delete interpreter;
 
     return 0;
 }

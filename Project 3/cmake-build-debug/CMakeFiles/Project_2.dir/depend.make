@@ -173,11 +173,16 @@ CMakeFiles/Project_2.dir/UndefinedAutomata.cpp.o: \
  ../UndefinedAutomata.h
 CMakeFiles/Project_2.dir/main.cpp.o: \
  ../Automaton.h \
+ ../Database.h \
  ../DatalogProgram.h \
+ ../Header.h \
+ ../Interpreter.h \
  ../Lexer.h \
  ../Parameter.h \
  ../Parser.h \
  ../Predicate.h \
+ ../Relation.h \
  ../Rule.h \
  ../Token.h \
+ ../Tuple.h \
  ../main.cpp

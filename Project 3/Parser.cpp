@@ -21,14 +21,15 @@ bool Parser::match(Token* t, std::string s) {
     }
 }
 
-void Parser::parse() {
+DatalogProgram* Parser::parse() {
+    DatalogProgram* datalog;
     try{
-        DatalogProgram* datalog = parseDatalogProgram();
-        std::cout << datalog->toString();
+        datalog = parseDatalogProgram();
     } catch(Token* r) {
         std::cout << "Failure!\n";
         std::cout << "   " << r->toString();
     }
+    return datalog;
 }
 
 DatalogProgram* Parser::parseDatalogProgram() {

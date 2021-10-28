@@ -38,7 +38,7 @@ public:
     std::string toString();
     ~Parser();
 
-    void parse();
+    DatalogProgram* parse();
 
 };
 
