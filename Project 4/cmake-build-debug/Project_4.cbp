@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Project_4"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Project_4">
+				<Option output="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/cmake-build-debug/Project_4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/."/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_4"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Project_4/fast">
+				<Option output="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/cmake-build-debug/Project_4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/."/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_4/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/gideontonkinson/Documents/CS\ 236/Projects/Project\ 4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/AddAutomaton.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/AddAutomaton.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Automaton.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/ColonAutomaton.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/ColonAutomaton.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/ColonDashAutomaton.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/ColonDashAutomaton.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/CommaAutomaton.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/CommaAutomaton.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/CommentAutomation.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/CommentAutomation.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Database.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Database.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/DatalogProgram.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/DatalogProgram.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/EOFAutomaton.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/EOFAutomaton.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/FactAutomaton.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/FactAutomaton.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Header.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Header.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/IDAutomaton.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/IDAutomaton.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Interpreter.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Interpreter.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/LeftParenAutomaton.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/LeftParenAutomaton.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Lexer.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Lexer.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/MultiplyAutomaton.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/MultiplyAutomaton.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Parameter.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Parameter.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Parser.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Parser.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/PeriodAutomaton.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/PeriodAutomaton.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Predicate.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Predicate.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/QMarkAutomaton.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/QMarkAutomaton.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/QueriesAutomaton.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/QueriesAutomaton.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Relation.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Relation.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/RightParenAutomaton.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/RightParenAutomaton.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Rule.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Rule.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/RulesAutomaton.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/RulesAutomaton.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/SchemesAutomaton.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/SchemesAutomaton.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/StringAutomaton.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/StringAutomaton.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Token.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Token.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Tuple.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Tuple.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/UndefinedAutomata.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/UndefinedAutomata.h">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/main.cpp">
+			<Option target="Project_4"/>
+		</Unit>
+		<Unit filename="/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
