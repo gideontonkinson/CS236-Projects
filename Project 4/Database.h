@@ -13,6 +13,7 @@ private:
 public:
     void add(std::string s, Relation* r);
     Relation* at(std::string);
+    size_t size();
 };
 
 

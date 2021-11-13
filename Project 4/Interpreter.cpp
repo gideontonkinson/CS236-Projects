@@ -9,21 +9,13 @@ Interpreter::Interpreter(DatalogProgram* datalogProgram) {
     this->datalogProgram = datalogProgram;
     makeRelations();
     makeTuples();
-    for(Predicate* p : this->datalogProgram->getQueries()){
-        auto* r = evaluatePredicate(p);
-        std::cout << p->toString() << "? ";
-        if(r->numRows() > 0) {
-            std::cout << "Yes(" << r->numRows() << ")\n";
-        } else {
-            std::cout << "No\n";
-        }
-        std::cout << r->toString();
-    }
+    evaluateRules();
+    evaluateQueries();
 }
 
 void Interpreter::makeRelations() {
     for(Predicate* s : datalogProgram->getSchemes()){
-        auto *h = new Header();
+        Header *h = new Header();
         for(size_t i = 0; i < s->getParamas().size(); i++){
             h->addAttributes(s->getParamas().at(i)->toString());
         }
@@ -34,7 +26,7 @@ void Interpreter::makeRelations() {
 
 void Interpreter::makeTuples() {
     for(Predicate* f : datalogProgram->getFacts()){
-        Tuple t = Tuple();
+        Tuple t;
         for(size_t i = 0; i < f->getParamas().size(); i++){
             t.addValue(f->getParamas().at(i)->toString());
         }
@@ -73,5 +65,58 @@ Relation *Interpreter::evaluatePredicate(Predicate *p) {
     r = r->project(projectVector);
     r = r->rename(seen);
     return r;
+}
+
+void Interpreter::evaluateRule(Rule* rule) {
+    Relation* r  = evaluatePredicate(rule->getBodyPreds().at(0));
+    for(size_t i = 1; i < rule->getBodyPreds().size(); i++){
+        r = r->join(evaluatePredicate(rule->getBodyPreds().at(i)));
+    }
+    std::vector<size_t> indices;
+    for(Parameter* p : rule->getHeadPred()->getParamas()){
+        for(size_t i = 0; i < r->getHeader()->getAttributes().size(); i++){
+            if(r->getHeader()->getAttributes().at(i) == p->toString()){
+                indices.push_back(i);
+            }
+        }
+    }
+    r = r->project(indices);
+    std::vector<std::string> names;
+    for(std::string s : database.at(rule->getHeadPred()->getID())->getHeader()->getAttributes()){
+        names.push_back(s);
+    }
+    r = r->rename(names);
+    std::cout << database.at(rule->getHeadPred()->getID())->unite(r);
+}
+
+void Interpreter::evaluateRules() {
+    size_t numTuples;
+    size_t numTuplesAfter;
+    size_t numTimesThrough = 0;
+    std::cout << "Rule Evaluation\n";
+    do {
+        numTuples = database.size();
+        for(Rule* rule : datalogProgram->getRules()) {
+            std::cout << rule->toString() << "\n";
+            evaluateRule(rule);
+        }
+        numTuplesAfter = database.size();
+        numTimesThrough++;
+    } while(numTuplesAfter != numTuples);
+    std::cout << "\nSchemes populated after " << numTimesThrough << " passes through the Rules.\n\n";
+}
+
+void Interpreter::evaluateQueries() {
+    std::cout << "Query Evaluation\n";
+    for(Predicate* p : datalogProgram->getQueries()){
+        Relation* r = evaluatePredicate(p);
+        std::cout << p->toString() << "? ";
+        if(r->numRows() > 0) {
+            std::cout << "Yes(" << r->numRows() << ")\n";
+        } else {
+            std::cout << "No\n";
+        }
+        std::cout << r->toString();
+    }
 }
 

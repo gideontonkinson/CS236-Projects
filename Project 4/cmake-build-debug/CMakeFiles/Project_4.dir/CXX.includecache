@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Header.h
+vector
+-
+string
+-
+map
+-
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Relation.cpp
+Relation.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Relation.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Relation.h
+string
+-
+set
+-
+map
+-
+Header.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Header.h
+Tuple.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Tuple.h
+
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 4/Tuple.h
+vector
+-
+string
+-
+

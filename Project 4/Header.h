@@ -6,6 +6,7 @@
 #define PROJECT_3_HEADER_H
 #include <vector>
 #include <string>
+#include <map>
 
 class Header {
 private:
@@ -13,6 +14,7 @@ private:
 public:
     Header() = default;
     void addAttributes(std::string a);
+    Header* combineHeader(Header* h, const std::map <size_t, size_t> &m);
     std::vector<std::string> getAttributes();
     std::string at(int i);
     size_t size();

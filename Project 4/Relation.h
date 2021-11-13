@@ -6,6 +6,7 @@
 #define PROJECT_3_RELATION_H
 #include <string>
 #include <set>
+#include <map>
 #include "Header.h"
 #include "Tuple.h"
 
@@ -21,11 +22,11 @@ public:
     Relation* project(std::vector<size_t> indices);
     Relation* rename(std::vector<std::string> attributes);
     Relation* join(Relation* r);
-    Relation* unite(Relation* r);
-    Header combineHeaders(Relation* r);
-    bool isJoinable(Relation*r );
-    Tuple combineTuples(Relation* r);
+    std::string unite(Relation* r);
+    bool isJoinable(Tuple& t1, Tuple& t2, const std::map <size_t, size_t> &m);
+    Tuple combineTuples(Tuple& t1, Tuple& t2, const std::map <size_t, size_t> &m);
     bool addTuple(Tuple t);
+    Header* getHeader();
     size_t numRows();
     std::string toString();
 };

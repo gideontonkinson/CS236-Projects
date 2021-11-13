@@ -11,3 +11,11 @@ void Database::add(std::string s, Relation* r) {
 Relation* Database::at(std::string s) {
      return relations.at(s);
 }
+
+size_t Database::size() {
+    size_t totalTuples = 0;
+    for(auto r : relations){
+        totalTuples += r.second->numRows();
+    }
+    return totalTuples;
+}

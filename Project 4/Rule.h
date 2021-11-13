@@ -17,6 +17,8 @@ public:
     std::string toString();
     void addPredList(std::vector<Predicate*> bodyPreds);
     void addPred(Predicate* pred);
+    Predicate* getHeadPred();
+    std::vector<Predicate*> getBodyPreds();
 };
 
 

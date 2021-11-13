@@ -25,3 +25,11 @@ std::string Rule::toString() {
     s+= ".";
     return s;
 }
+
+Predicate *Rule::getHeadPred() {
+    return headPredicate;
+}
+
+std::vector<Predicate *> Rule::getBodyPreds() {
+    return bodyPredicates;
+}
