@@ -8,6 +8,8 @@
 #include <set>
 #include <vector>
 #include <stack>
+#include <iostream>
+#include <sstream>
 #include "Rule.h"
 
 class Graph {
@@ -17,14 +19,15 @@ private:
     std::vector<std::set<size_t>*> SCCs;
     std::vector<size_t> postOrder;
     void addEdge(int i, int j);
-    std::set<size_t>* dfs(size_t);
+    void dfsPost(size_t);
     void dfsForestPost();
-    void dfsSCCs();
+    std::set<size_t>* dfsSCC(size_t i);
+    void dfsSCCForest();
 public:
     Graph(std::vector<Rule*> nodeList);
     Graph* populateGraph();
     std::vector<std::set<size_t>*> getSCCs();
-    std::string toString();
+    void toString();
     bool selfLoop(size_t i);
 };
 

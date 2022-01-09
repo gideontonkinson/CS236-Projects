@@ -6,28 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Automaton.h
-Token.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Token.h
-
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Database.h
-map
--
-Relation.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Relation.h
-
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/DatalogProgram.h
-Predicate.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Predicate.h
-Rule.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Rule.h
-Parameter.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Parameter.h
-vector
--
-set
--
-
 /Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Graph.cpp
 Graph.h
 /Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Graph.h
@@ -41,57 +19,15 @@ vector
 -
 stack
 -
-Rule.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Rule.h
-
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Header.h
-vector
--
-string
--
-map
--
-
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Interpreter.cpp
-Interpreter.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Interpreter.h
-
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Interpreter.h
 iostream
 -
-DatalogProgram.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/DatalogProgram.h
-Database.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Database.h
-Relation.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Relation.h
-Graph.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Graph.h
-
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Lexer.h
-vector
+sstream
 -
-Automaton.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Automaton.h
-Token.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Token.h
+Rule.h
+/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Rule.h
 
 /Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Parameter.h
 string
--
-
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Parser.h
-Token.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Token.h
-Predicate.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Predicate.h
-Rule.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Rule.h
-DatalogProgram.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/DatalogProgram.h
-vector
--
-set
 -
 
 /Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Predicate.h
@@ -102,47 +38,9 @@ vector
 Parameter.h
 /Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Parameter.h
 
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Relation.h
-string
--
-set
--
-map
--
-Header.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Header.h
-Tuple.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Tuple.h
-
 /Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Rule.h
 Predicate.h
 /Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Predicate.h
 vector
--
-
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Token.h
-string
--
-
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Tuple.h
-vector
--
-string
--
-
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/main.cpp
-Lexer.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Lexer.h
-Parser.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Parser.h
-Interpreter.h
-/Users/gideontonkinson/Documents/CS 236/Projects/Project 5/Interpreter.h
-iostream
--
-fstream
--
-string
--
-sstream
 -
 

@@ -97,7 +97,8 @@ void Interpreter::evaluateRules() {
         size_t numTuples;
         size_t numTuplesAfter;
         size_t numTimesThrough = 0;
-        std::cout << "SCC: " << SCCToString(i);
+        std::cout << "SCC: ";
+        SCCToString(i);
         if(!graph->selfLoop(i)){
             for (size_t scc: *graph->getSCCs().at(i)) {
                 Rule *rule = datalogProgram->getRules().at(scc);
@@ -117,12 +118,13 @@ void Interpreter::evaluateRules() {
                 numTimesThrough++;
             } while (numTuplesAfter != numTuples);
         }
-        std::cout << "\n" << numTimesThrough << " passes " << SCCToString(i);
+        std::cout << numTimesThrough << " passes: ";
+        SCCToString(i);
     }
 }
 
 void Interpreter::evaluateQueries() {
-    std::cout << "Query Evaluation\n";
+    std::cout << "\nQuery Evaluation\n";
     for(Predicate* p : datalogProgram->getQueries()){
         Relation* r = evaluatePredicate(p);
         std::cout << p->toString() << "? ";
@@ -135,19 +137,15 @@ void Interpreter::evaluateQueries() {
     }
 }
 
-std::string Interpreter::SCCToString(size_t i) {
-    std::string out = "";
+void Interpreter::SCCToString(size_t i) {
+    std::stringstream ss;
     std::set<size_t>* scc = graph->getSCCs().at(i);
-    std::set<size_t>::iterator it = scc->begin();
-    while(it !=  scc->end()) {
-        out += &"R" [ *it];
-        if(it++ != scc->end()) {
-            out+= ",";
-        } else {
-            out += "\n";
-        }
+    for(auto it = scc->begin(); it != scc->end(); it++) {
+        ss << "R" << *it << ",";
     }
-    return out;
+    ss.seekp(-1, std::ios_base::end); //remove extra comma?
+    ss << "\n";
+    std::cout << ss.str();
 }
 
 

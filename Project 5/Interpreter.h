@@ -25,7 +25,7 @@ public:
     void evaluateRule(Rule* rule);
     void evaluateRules();
     void evaluateQueries();
-    std::string SCCToString(size_t i);
+    void SCCToString(size_t i);
 };
 
 

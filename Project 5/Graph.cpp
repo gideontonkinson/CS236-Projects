@@ -15,19 +15,25 @@ Graph::Graph(std::vector<Rule *> nodeList) {
 /**Populates the graph with edges and identifies the SCCs**/
 Graph* Graph::populateGraph() {
     Graph* rGraph = new Graph(nodes);
-    for(size_t i = 0; i < nodes.size(); i++){
-        for(size_t j = 0; j < nodes.at(i)->getBodyPreds().size(); j++){
+    int i = 0;
+    for(auto currNode : nodes){
+        for(auto pred: currNode->getBodyPreds()){
+            int j = 0;
             for(auto n : nodes){
-                if (n->getHeadPred()->getID() == nodes.at(i)->getBodyPreds().at(j)->getID()){
+                if (n->getHeadPred()->getID() == pred->getID()){
                     addEdge(i,j);
                     rGraph->addEdge(j,i);
                 }
+                j++;
             }
         }
+        i++;
     }
     rGraph->dfsForestPost();
-    postOrder = rGraph->postOrder;
-    dfsSCCs();
+    for(auto it = rGraph->postOrder.rbegin(); it != rGraph->postOrder.rend(); it++) {
+        postOrder.push_back(*it);
+    }
+    dfsSCCForest();
     return rGraph;
 }
 
@@ -39,24 +45,19 @@ void Graph::addEdge(int i, int j) {
 }
 
 /**Does a dfs search on the graoh and returns a tree as a set**/
-std::set<size_t>* Graph::dfs(size_t i) {
-    std::set<size_t>* tree = new std::set<size_t>;
+void Graph::dfsPost(size_t i) {
     auto edges = dependencies.find(i)->second;
     std::set<int>::iterator it = edges.begin();
-    for(size_t j = 0; j < edges.size(); j++){
-        while(it != edges.end()) {
-            if(!nodes.at(*it)->isVisited()){
-                nodes.at(*it)->visit();
-                std::set<size_t>* temp = dfs(*it);
-                tree->insert(temp->begin(), temp->end());
-                postOrder.push_back(i);
-            }
-            it++;
+    while(it != edges.end()) {
+        if(!nodes.at(*it)->isVisited()){
+            nodes.at(*it)->visit();
+            dfsPost(*it);
+            postOrder.push_back(*it);
         }
+        it++;
     }
-    tree->insert(i);
-    return tree;
 }
+
 
 void Graph::dfsForestPost(){
     for(auto node : nodes){
@@ -65,19 +66,37 @@ void Graph::dfsForestPost(){
     for(size_t i = 0; i < nodes.size(); i++) {
         if (!nodes.at(i)->isVisited()) {
             nodes.at(i)->visit();
-            dfs(i);
+            dfsPost(i);
+            postOrder.push_back(i);
         }
     }
 }
 
-void Graph::dfsSCCs() {
+std::set<size_t>* Graph::dfsSCC(size_t i) {
+    std::set<size_t>* tree = new std::set<size_t>;
+    auto edges = dependencies.find(i)->second;
+    std::set<int>::iterator it = edges.begin();
+    while(it != edges.end() && !edges.empty()) {
+        if(!nodes.at(*it)->isVisited()){
+            nodes.at(*it)->visit();
+            std::set<size_t>* temp = dfsSCC(*it);
+            tree->insert(temp->begin(), temp->end());
+        }
+        it++;
+    }
+    tree->insert(i);
+    return tree;
+}
+
+void Graph::dfsSCCForest() {
     for(auto node : nodes){
         node->unvisit();
     }
-    for(size_t i = postOrder.size()-1; i > -1; i--) {
-        if (!nodes.at(postOrder.at(i))->isVisited()) {
-            nodes.at(i)->visit();
-            SCCs.push_back(dfs(postOrder.at(i)));
+    for(size_t i = 0; i < postOrder.size(); i++){
+        size_t temp = postOrder.at(i);
+        if (!nodes.at(temp)->isVisited()) {
+            nodes.at(temp)->visit();
+            SCCs.push_back(dfsSCC(temp));
         }
     }
 }
@@ -87,27 +106,30 @@ std::vector<std::set<size_t> *> Graph::getSCCs() {
 }
 
 bool Graph::selfLoop(size_t i) {
-    if(dependencies.find(i)->second.find(i) == dependencies.find(i)->second.end()){
-        return false;
-    } else {
+    bool out = false;
+    if(SCCs.at(i)->size() > 1)
         return true;
+    for(size_t r : *SCCs.at(i)){
+        if(dependencies.find(r)->second.find(r) != dependencies.find(r)->second.end()){
+            return true;
+        }
     }
+    return out;
 }
 
-std::string Graph::toString() {
-    std::string out = "Dependency Graph\n";
-    for(int i = 0; i < nodes.size(); i++){
-        out += &"R" [ i];
-        out += ":";
-        for(auto r : dependencies.find(i)->second){
-            out += &"R" [ r];
+void Graph::toString() {
+    std::stringstream ss;
+    ss << "Dependency Graph\n";
+    for(size_t i = 0; i < nodes.size(); i++){
+        ss << "R" << i << ":";
+        for(auto r : dependencies.find(i)->second) {
+            ss << "R" << r << ",";
         }
-        if(i != dependencies.find(i)->second.size()-1){
-            out += ",";
-        } else {
-            out += "\n";
+        if(!dependencies.find(i)->second.empty()) {
+            ss.seekp(-1, std::ios_base::end); //remove extra comma?
         }
+        ss << "\n";
     }
-    out += "\n";
-    return out;
+    ss << "\n";
+    std::cout << ss.str();
 }
